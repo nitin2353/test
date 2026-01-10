@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header>
         <div class="container navbar">
-            <div class="logo"><img src="../assets/logo.jpeg">AFTAB Society</div>
+            <div class="logo">
+                <img src="../assets/logo.jpeg" style="height: 50px; display: inline-block; vertical-align: middle; margin-right: 10px;">
+                AFTAB Society
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
@@ -19,7 +23,7 @@
                     <li><a href="./mission.html">Mission & Vision</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./programs.html">Programs</a></li>
-                    <li><a href="./president.html">President's Message</a></li>
+                    <li><a href="./president.html">Message</a></li>
                     <li><a href="./contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
@@ -27,21 +31,57 @@
         </div>
     </header>
 
+    <section class="section-padding" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="color: white; font-size: 3rem;">Get in Touch</h1>
+            <p>We are here to help and answer any questions you might have.</p>
+        </div>
+    </section>
+
     <section class="section-padding">
         <div class="container">
-            <h1 class="text-center" style="margin-bottom: 50px;">Get in Touch</h1>
             
             <div class="contact-wrapper">
+                
                 <div class="contact-info-box">
-                    <h3>Contact Information</h3>
-                    <p style="margin-bottom: 20px; color: #fff;">We would love to hear from you. Reach out to volunteer, donate, or ask for help.</p>
+                    <h3 style="border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 15px; margin-bottom: 20px;">Contact Information</h3>
+                    <p style="margin-bottom: 30px; color: rgba(255,255,255,0.9);">Reach out to us for volunteering, donations, or support. We are available on call and WhatsApp.</p>
                     
-                    <p><i class="fas fa-envelope"></i> &nbsp; aaftabwomenwelfare@gmail.com</p>
-                    <br>
-                    <p><i class="fab fa-instagram"></i> &nbsp; <a href="https://www.instagram.com/aftabwomenwelfare" target="_blank" style="color: white;">@aftabwomenwelfare</a></p>
-                    <br>
-                    <h3>Join Us</h3>
-                    <p style="color: #fff;">Help us empower more lives.</p>
+                    <div class="contact-details-list">
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone / WhatsApp</h4>
+                                <p>+91 83065 29632</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>aaftabwomenwelfare@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/aftabwomenwelfare" target="_blank" style="text-decoration: underline;">@aftabwomenwelfare</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Registered Office</h4>
+                                <p>AFTAB Women Welfare Society,<br>Ajmer, Rajasthan, India.</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="contact-form-box">
@@ -50,8 +90,11 @@
                         <label>Your Name</label>
                         <input type="text" placeholder="Enter your full name" required>
 
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your mobile number" required>
+
                         <label>Email Address</label>
-                        <input type="email" placeholder="Enter your email" required>
+                        <input type="email" placeholder="Enter your email">
 
                         <label>Message</label>
                         <textarea rows="5" placeholder="How can we help you?" required></textarea>
@@ -60,14 +103,30 @@
                     </form>
                 </div>
             </div>
+
+            <div class="map-section">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114313.1813739775!2d74.56846663595568!3d26.46648719042504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be6d8fcb7cd2f%3A0x53b6c2217d12d080!2sAjmer%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
         </div>
     </section>
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2023 AFTAB Women Welfare Society.</p>
+            <h3>AFTAB Women Welfare Society</h3>
+            <div class="social-links" style="margin: 15px 0;">
+                <a href="https://www.instagram.com/aftabwomenwelfare" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2023 AFTAB Women Welfare Society. All Rights Reserved.</p>
         </div>
     </footer>
-<script src="../js/script.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
