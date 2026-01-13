@@ -12,6 +12,7 @@
     --font-body: 'Open Sans', sans-serif;
     --shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -1100,3 +1101,132 @@ footer {
     .leader-info p { text-align: center; }
 }
 
+/* --- FOUNDER TRIBUTE STYLE --- */
+.founder-section {
+    background-color: #fff8e1; /* Soft Cream Color */
+    border-left: 5px solid var(--primary-color);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.founder-img-box {
+    flex-shrink: 0;
+    width: 220px;
+    height: 280px;
+    border: 5px solid white;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.founder-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* "Late" Badge */
+.late-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.founder-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.founder-designation {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    display: block;
+    font-style: italic;
+}
+
+/* Mobile Fix for Founder */
+@media (max-width: 768px) {
+    .founder-section { flex-direction: column; text-align: center; }
+}
+/* --- LEADER CARD STYLE --- */
+.leader-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary-color); /* Orange decorative line */
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px); /* Hover karne par thoda upar uthega */
+}
+
+.leader-img {
+    flex-shrink: 0;
+    width: 180px;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.leader-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leader-info {
+    flex: 1;
+}
+
+.leader-info h3 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.leader-designation {
+    font-size: 0.95rem;
+    color: var(--secondary-color); /* Green */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.leader-info p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .leader-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .leader-info p { text-align: center; }
+}
